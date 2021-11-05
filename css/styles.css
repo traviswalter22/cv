@@ -9,7 +9,6 @@ body {
   width: 100%;
   margin: auto;
 }
-
 header{
   height: 100px;
   background: black;
@@ -18,7 +17,6 @@ header{
   position: fixed;
   display: sticky;
   top: 0;
-
 /* Logo CSS */ 
 }
 .logo{
@@ -34,16 +32,13 @@ header{
   color: #fff;
   letter-spacing: 5px;
 }
-
 /* HAMBURGER MENU CSS *
-
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
   width: 100%;
   background: #000;
 }
-
 /* (B) HORIZONTAL MENU ITEMS */
 #hamitems { 
   display: flex; 
@@ -69,7 +64,6 @@ header{
     display: inline;
     width: 100%;
     text-align: center;
-
   }
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label { 
@@ -80,12 +74,10 @@ header{
     font-size: 1.2em;
     padding: 10px;
   }
-
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; }
 }
-
 /* Banner Area CSS Code */
 .banner-area{
   width: 100%;
@@ -96,7 +88,6 @@ header{
   -webkit-background-size: cover;
   background-size: cover;
   background-position: top center;
- 
 }
 .banner-area h2{
   padding-top: 100px;
@@ -107,8 +98,6 @@ header{
   text-align: center;
   text-shadow:5px 5px 10px black;
 }
-
-
 /* Content Area CSS */
 .content-area{
   position: relative;
@@ -120,8 +109,7 @@ header{
 .my-pic{
   padding: 50px;
   width: 300px;
-  height: 300px;
-  
+  height: 300px; 
 }
 .grid-area{
   width: 100%;
@@ -132,7 +120,6 @@ header{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-
 .grid-child h1{
   font-size: 50px;
   font-family: 'Special Elite', cursive;
@@ -148,8 +135,6 @@ header{
   color: white;
   text-align: center;
 }
-
-
 /* Contact Page */
 .contact-area{
   position: relative;
@@ -170,14 +155,12 @@ header{
   padding-top: 10px;
   line-height: 1em;
 }
-
 .form-area{
   position: relative;
   padding: 10px;
   height: 100%;
   background-color: white;
   top: 500px;
-
 }
 form label {
   color: black;
@@ -210,7 +193,6 @@ input[type="text" i] {
   height: 100%;
   background-color: white;
 }
-
 /* Resume Area */
 .resume-area h2 {
   font-size: 45px;
@@ -246,7 +228,6 @@ ul {
   ul li {
     font-size: 25px;
     }
-
   .experience{
     padding: 0 50px 50px 50px;
   }
@@ -257,7 +238,6 @@ ul {
     -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
     -moz-column-gap: 50px; /* Mozilla Firefox */
     column-gap: 50px;
-
     -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
     -moz-column-rule: 1px single grey; /* Mozilla Firefox */
      column-rule: 1px single grey;
@@ -296,6 +276,4 @@ ul {
     -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
     -moz-column-rule: 1px single grey; /* Mozilla Firefox */
      column-rule: 1px single grey;
-     margin: 50px;
-     
-  }
+     margin: 50px;}
