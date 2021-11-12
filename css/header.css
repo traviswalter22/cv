@@ -1,0 +1,85 @@
+/* Header CSS */
+*{
+    margin: 0;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+  }
+  
+  header{
+    height: 100px;
+    background: black;
+    width: 100%;
+    z-index: 11;
+    position: fixed;
+    display: sticky;
+    top: 0;
+  
+  /* Logo CSS */ 
+  }
+  .logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+  }
+  .logo a{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    letter-spacing: 5px;
+  }
+  
+  /* HAMBURGER MENU CSS *
+  
+  /* [ON BIG SCREEN] */
+  /* (A) WRAPPER */
+  #hamnav {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { 
+    display: flex; 
+  }
+  #hamitems a {
+    margin-top: 30px;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+  }
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: inline;
+      width: 100%;
+      text-align: center;
+  
+    }
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: black;
+      background: white;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+   
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
