@@ -1,279 +1,123 @@
-*{
-  margin: 0;
-}
+
 body {
-  background-color: black;
-}
-/* Header CSS */
-.wrapper{
-  width: 100%;
-  margin: auto;
-}
-header{
-  height: 100px;
-  background: black;
-  width: 100%;
-  z-index: 11;
-  position: fixed;
-  display: sticky;
-  top: 0;
-/* Logo CSS */ 
-}
-.logo{
-  width: 30%;
-  float: left;
-  line-height: 100px;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
   text-align: center;
+  font-family: 'Merriweather', serif;
 }
-.logo a{
-  text-decoration: none;
-  font-size: 50px;
-  font-family: 'Special Elite', cursive;
-  color: #fff;
-  letter-spacing: 5px;
+h2 {
+  font-family: 'Montserrat', sans-serif;
 }
-/* HAMBURGER MENU CSS *
-/* [ON BIG SCREEN] */
-/* (A) WRAPPER */
-#hamnav {
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/* Top Container CSS */
+.top_container {
   width: 100%;
-  background: #000;
-}
-/* (B) HORIZONTAL MENU ITEMS */
-#hamitems { 
-  display: flex; 
-}
-#hamitems a {
-  margin-top: 30px;
-  flex-grow: 1;
-  flex-basis: auto;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Special Elite', cursive;
-}
-/* (C) HIDE HAMBURGER */
-#hamnav label, #hamburger { display: none; }
-
-/* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px){
-  /* (A) BREAK INTO VERTICAL MENU */
-  #hamitems a {
-    box-sizing: border-box;
-    display: inline;
-    width: 100%;
-    text-align: center;
-  }
-  /* (B) SHOW HAMBURGER ICON */
-  #hamnav label { 
-    display: inline-block; 
-    color: white;
-    background: #a02620;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-  /* (C) TOGGLE SHOW/HIDE MENU */
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
-}
-/* Banner Area CSS Code */
-.banner-area{
-  width: 100%;
+  background-color: #1a3e59;
+  position: relative;
   height: 450px;
-  position: fixed;
-  top: 100px;
-  background-image: url(https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: top center;
+  display: inline-block;
 }
-.banner-area h2{
+.web_text {
+  text-decoration: underline;
+}
+.title{
+  font-family: 'Lobster', cursive;
+  font-size: 500%;
+  margin-bottom: 0;
   padding-top: 100px;
-  font-size: 100px;
-  font-family: 'Special Elite', cursive;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  text-shadow:5px 5px 10px black;
+  display: block;
 }
-/* Content Area CSS */
-.content-area{
+.title_2 {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 0px;
+  display: block;
+}
+.teacher {
+  position: static;
+  }
+/* Middle Container CSS */
+.middle-container {
+  display: inline-block;
+  width: 100%;
+  height: 250px;
+  padding-bottom: 0;
   position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+.profile{
+  width: 50%;
+  position: relative;
+  display: inline-block;
+}
+.about_me {
   width: 100%;
-  height: 100%;
-  background-color: black;
-  top: 500px;
-}
-.my-pic{
-  padding: 50px;
-  width: 300px;
-  height: 300px; 
-}
-.grid-area{
-  width: 100%;
-  height: 475px;
-}
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-.grid-child h1{
-  font-size: 50px;
-  font-family: 'Special Elite', cursive;
-  padding-top: 30%;
-  color: white;
-  text-align: center;
-}
-.grid-child p{
-  font-size: 30px;
-  font-family: 'Special Elite', cursive;
   padding-top: 10px;
-  line-height: 1em;
-  color: white;
-  text-align: center;
-}
-/* Contact Page */
-.contact-area{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  top: 500px;
-  text-align: center;
-}
-.contact-area h1{
-  font-size: 50px;
-  font-family: 'Special Elite', cursive;
-  padding-top: 25px;
-}
-.contact-area p{
-  font-size: 30px;
-  font-family: 'Special Elite', cursive;
-  padding-top: 10px;
-  line-height: 1em;
-}
-.form-area{
-  position: relative;
-  padding: 10px;
-  height: 100%;
-  background-color: white;
-  top: 500px;
-}
-form label {
-  color: black;
-  font-family: 'Special Elite', cursive;
-  line-height: 3em;
-}
-form textarea {
-  width: 100%;
-  height: 150px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-  font-family: 'Special Elite', cursive;
-}
-input[type="email" i] {
-  width: 25%;
-  font-family: 'Special Elite', cursive;
-}
-input[type="text" i] {
-  width: 25%;
-  font-family: 'Special Elite', cursive;
-}
-.resume-area{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-/* Resume Area */
-.resume-area h2 {
-  font-size: 45px;
-  text-align: center;
-  padding: 15px;
   margin-top: 10px;
-  font-family: 'Special Elite', cursive;
+  font-size: large;
+  display: inline;
+  
 }
-.resume-area p{
-  font-size: 25px;
-  margin: 50px;
-  text-align: justify;
+
+/* Footer Area */
+.footer1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  width: 100%;
 }
-.resume-area h3{
-  font-size: 35px;
-  font-weight: 100;
+
+.footer li {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.copyright {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Merriweather', serif;
+}
+
+
+.fa {
   padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
 }
-ul {
-    -webkit-column-count: 3;  /* Chrome/Opera, Safari */
-    -moz-column-count: 3; /* Mozilla Firefox */
-    column-count: 3;
 
-    -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
-    -moz-column-gap: 50px; /* Mozilla Firefox */
-    column-gap: 50px;
-
-    -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
-    -moz-column-rule: 1px single grey; /* Mozilla Firefox */
-     column-rule: 1px single grey;
-     margin: 50px;
+.fa:hover {
+  opacity: 0.7;
 }
-  ul li {
-    font-size: 25px;
-    }
-  .experience{
-    padding: 0 50px 50px 50px;
-  }
-  .experience ul{
-    -webkit-column-count: 1;  /* Chrome/Opera, Safari */
-    -moz-column-count: 31; /* Mozilla Firefox */
-    column-count: 1;
-    -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
-    -moz-column-gap: 50px; /* Mozilla Firefox */
-    column-gap: 50px;
-    -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
-    -moz-column-rule: 1px single grey; /* Mozilla Firefox */
-     column-rule: 1px single grey;
-     margin: 50px;
-    line-height: 2em;
-  }
-  .experience p{
-    font-size: 25px;
-    margin: 50px;
-    text-align: justify;
-    line-height: 0;
-  }
-.education{
-  padding: 0 50px 0 50px;
-}
-  .education h3{
-    font-size: 35px;
-  font-weight: 100;
-  padding: 10px;
-  line-height: 0;
-  }
-  .education p{
-    font-size: 25px;
-    margin: 50px;
-    text-align: justify;
-    line-height: 0;
-  }
-.education ul{
-    -webkit-column-count: 1;  /* Chrome/Opera, Safari */
-    -moz-column-count: 31; /* Mozilla Firefox */
-    column-count: 1;
-    -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
-    -moz-column-gap: 50px; /* Mozilla Firefox */
-    column-gap: 50px;
 
-    -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
-    -moz-column-rule: 1px single grey; /* Mozilla Firefox */
-     column-rule: 1px single grey;
-     margin: 50px;}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.phone {
+  color: white;
+}
+.btn {
+  color: white;
+}
